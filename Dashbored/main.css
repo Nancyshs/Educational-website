@@ -1,0 +1,659 @@
+body
+{
+    margin: 0;
+}
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
+}
+:root
+{
+    --main-color:#7971ea;
+    --trans-time:.3s;
+    --main-font:"sans-serif";
+    --hove-color:#4f45e3;
+    --text-color:#777;
+    --back-color:#cedae4;
+}
+.main-page
+{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+/* ============ */
+/* Nav bar */
+.navbar1 
+{
+    /* background-color: var(--main-color); */
+    position: relative;
+}
+.nav
+{
+    /* background-color: #eee; */
+    min-height: 100vh;
+    text-align: center;
+   transition: .3s;
+   margin-top: 10px;
+
+}
+.show-bars
+{
+    margin-bottom: 24px;
+    text-align: end;
+   transition: .3s;
+   
+}
+.show-bars i
+{
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+ .nav > div:not(.title,.show-bars)
+{
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 45px;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.614);
+    text-transform: capitalize;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  
+}
+.main-page .nav > div a:not(.icon)
+{
+    color:var(--main-color);
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
+    display: block;
+    text-decoration: none;
+}
+.nav > div .icon
+{
+    margin-right: 5px;
+    color: #9d4edd;
+}
+ .nav > div:not(.title,.show-bars):hover
+{
+    background-color: #bcb8f8;
+    /* opacity: .5; */
+    border-left: 5px solid var(--hove-color);
+    
+} 
+
+.nav-bars
+{
+    position: absolute;
+    right: 6px;
+    font-size: 24px;
+    font-weight: 799;
+    display: none;
+}
+ .nav > div:not(.title):hover a:not(.icon)
+{
+    color: var(--hove-color);
+}
+ .nav .div1 span
+{
+    color:#025159;
+    font-size: 20px;
+    font-weight: bold;
+}
+ .nav > div span,
+ .nav > div img
+{
+    margin-right: 15px;
+}
+.title
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+  
+}
+.title img
+{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.title h3
+{
+    font-weight: 600;
+    font-family: var(--main-font);
+    color: #015454;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* ============ */
+/* Header */
+
+header
+{
+    /* background-color: antiquewhite; */
+    height: fit-content;
+    padding: 5px 0;
+
+}
+header .cont
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+header .cont .data
+{
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    top: 60px;
+    right: 45px;
+    /* display: none; */
+    width: 21%;
+    background-color: var(--main-color);
+}
+header .cont .data .info
+{
+    display: flex;
+    justify-content: space-around;
+}
+header .cont .data .text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+header img
+{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+header .cont .name
+{
+    display: flex;
+    margin-right: 20px;
+}
+header .cont .name span
+{
+    font-size: 20px;
+    font-family: var(--main-font);
+}
+header .cont .data  .button-show
+{
+    text-align: center;
+    margin-top: 20px;
+}
+header .cont .data button
+{
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #7b2cbf;
+    transition: .3s;
+    cursor: pointer;
+}
+header .cont .data button:hover
+{
+    color: #240046;
+}
+header .cont .data button:hover i
+{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes move
+{
+    0%
+    {
+        transform: translateX(0);
+    }
+    40%
+    {
+        transform: translateX(5px);
+    }
+    
+}
+header .cont .name i
+{
+    margin-left: 10px;
+    width: fit-content;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.trans
+{
+    transform: rotate(180deg) !important;
+}
+header .cont .search input
+{
+  padding: 10px 15px;
+  outline: none;
+  border: 1px solid #025159;
+  border-radius: 10px;
+  text-transform: capitalize; 
+  font-family: var(--main-font);
+  font-size: 20px;
+  margin-top: 10px;
+}
+header .cont .search input:nth-child(2)
+{
+    background-color:var(--main-color) ;
+    color: white;
+    font-weight: 600;
+    transition: .3s;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: 1px solid var(--main-color);
+}
+header .cont .search input:nth-child(2):hover
+{
+    color:var(--hove-color) ;
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
+
+/* ============ */
+/* dash */
+.dash .grid-divs
+{
+    display: grid;
+   grid-template-columns: 30% 30% 30%;
+    margin-top: 60px;
+    column-gap: 1%;
+    
+}
+.dash .grid-divs > div
+{
+    background-color: white;
+    /* width: calc((100% - 120px) / 2); */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border-bottom: 8px solid var(--hove-color);
+}
+.dash .grid-divs > div i
+{
+    padding: 8px;
+    color: white;
+    margin: 10px 0 0 10px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    font-size: 20px;
+}
+
+
+.main-page .dash .grid-divs > div .student
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.main-page .dash .grid-divs > div p
+{
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+ .dash .grid-divs > div .student .text p
+{
+    text-transform: capitalize;
+    /* font-size: 17px; */
+    font-weight: 700;
+    margin: 5px 0 0 0 ;
+    color: black;
+}
+.dash .grid-divs > div .student .text span
+{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: var(--main-font);
+
+}
+.dash .grid-divs > div .student .prog
+{
+    width: 90px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .dash .grid-divs > div .student .prog::before
+{
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    top: 3px;
+    left: 5%;
+    border-radius: 50%;
+    
+} */
+.dash .grid-divs > div .student .prog span
+{
+    color: black;
+    z-index: 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--main-font);
+}
+.show-icon
+{
+    text-align: center;
+}
+.color1
+{
+    font-size: 20px;
+    background-color: #038C8C;
+}
+ .color2
+{
+    font-size: 20px;
+    background-color: #04BFBF;
+
+}
+ .color3
+{
+    font-size: 20px;
+    background-color: #025159;
+
+}
+/* =============== */
+/* table */
+.recnt-course h2
+{
+    margin-left: 5%;
+    color: var(--hove-color);
+}
+.dash table
+{
+    width: 90%;
+    margin: 30px 0 0 5%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    /* height: 70%; */
+}
+.dash table td
+{
+    text-transform: capitalize;
+    color:var(--text-color);
+    padding: 10px;
+}
+.dash table tr
+{
+    position: relative;
+    padding: 15px;
+}
+.dash table tr:not(.head,tr:last-child):after
+{
+    width: 100%;
+    height: 1px;
+    background-color: #04bfbf4d;
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.dash table .head td
+{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color:var(--main-color);
+    
+}
+.dash table a
+{
+    transition: .5s;
+    text-decoration: none;
+}
+
+.dash table a:hover
+{
+    color:#038C8C;
+}
+.dash .show-a
+{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.dash .show
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #04BFBF;
+    transition: .5s;
+    padding: 15px;
+    border-radius: 10px;
+}
+.dash .show:hover
+{
+    background-color: #04BFBF;
+    color: #025159;
+}
+.dash table .dark
+{
+    color: #0a93a1;
+}
+.dash table  .orange
+{
+    color: #ed4d1b;
+}
+.yellow
+{
+    color: #dc7a55;
+}
+.dash table  .edit
+{
+    color: rgb(58 186 58);
+    transition: var(--trans-time);
+    cursor: pointer;
+}
+.dash table .delete
+{
+    color: rgba(255, 0, 0, 0.6);
+    transition: var(--trans-time);
+}
+.dash table  .edit:hover
+{
+    color: #015454;
+    cursor: pointer;
+}
+.dash table  .delete:hover
+{
+    color: red;
+}
+/* ============ */
+.c-100
+{
+    grid-template-columns: 100%;
+}
+.change
+{
+    text-align:start !important; 
+}
+.dis
+{
+    display: none ;
+    transition: .3s;
+}
+.nav .s-d
+{
+    display: flex;
+}
+.show-list
+{
+  display: flex !important;
+   position: absolute !important;
+   width: 60% !important;
+   z-index:3 !important;
+   flex-direction:column !important;
+   background:var(--back-color) !important;
+   top: 60px;
+}
+.active
+{
+    background-color: #bf9a78a0;
+    border-left: 5px solid #04BFBF;
+    color: #8C452B;
+}
+
+@media(max-width:900px)
+{
+    header .cont .data 
+    {
+        width: 30%;
+    }
+    .dash .grid-divs
+    {
+        grid-template-columns: 45% 45%;
+    }
+    .nav > div:not(.title)
+    {
+        margin-left: 0;
+    }
+    .main-page .nav > div a:not(.icon)
+    {
+        font-size: 16px;
+    }
+}
+@media(max-width:767px)
+{
+    .nav
+    {
+        height: auto;
+        display: none;
+    }
+    .main-page 
+    {
+        grid-template-columns: 100%;
+    }
+    .show-bars
+    {
+        z-index: 4;
+    }
+    
+    .nav-bars
+    {
+        display: block;
+        bottom: 49px;
+    }
+    header .cont .name
+    {
+        margin-right: 7px;
+        margin-bottom: 49px;
+    }
+    form
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .cont .search input
+    {
+        width: 65%;
+        padding: 10px;
+    }
+    header .cont .search input:nth-child(2)
+    {
+        width: 35%;
+        padding: 5px;
+    }
+    header .cont .data 
+    {
+        width: 45%;
+    }
+    .dash .grid-divs
+     {
+        grid-template-columns: 80%;
+    }
+    .dash .grid-divs 
+    {
+        margin-left: 10%;
+    }
+    .dash table
+    {
+        margin-left: 0;
+    }
+    .dash table td
+    {
+        padding: 7px 5px;
+        font-size: 14px;
+    }
+    .dash table
+    {
+        margin-left: 3%;
+    }
+    .dash table .head td
+    {
+        font-size: 16px;
+    }
+    .recnt-course h2 
+    {
+        font-size: 18px;
+    }
+    .dash .grid-divs > div .student .text p,
+    .main-page .dash .grid-divs > div p,
+    header .cont .search input:nth-child(2),
+    .nav > div:not(.title,.show-bars),
+    header .cont .data .text
+    {
+        font-size: 14px;
+    }
+    header .cont .name span ,
+    header .cont .search input 
+    {
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 424px) {
+    .dash table {
+        margin-left: 2%;
+    }
+}
+@media (max-width: 374px) {
+    table .none {
+        display: none !important;
+    }
+    .dash table {
+        margin-left: 4%;
+    }
+    header .cont .data 
+    {
+        right: 4px;
+        width: 52%;
+    }
+    .search
+    {
+        width: 59%;
+    }
+}

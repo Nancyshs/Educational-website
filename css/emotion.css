@@ -1,0 +1,17 @@
+/* ******************* logo-Nav-Btn ==use to(js)************************* */
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    background-color: white; 
+    padding: 10px 30px; 
+    transition: all 0.2s ease;
+}
+.fixed .logo,
+.fixed nav a{
+    color: black;
+}
+
+

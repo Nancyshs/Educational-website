@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="form">
+            <h2>Add course</h2>
+            <div class="input-field">
+                <label for="text">Course title</label>
+                <input type="text" id="text" placeholder="Enter Course title" required>
+            </div>
+            
+            <div class="input-field">
+                <label for="date">Course expiration date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="input-field">
+                <label for="number">Course fees</label>
+                <input type="number" id="number" min="0" max="100" placeholder="Enter course fees" required>
+            </div>
+            <div class="input-field">
+                <label for="file">Course material</label>
+                <input type="file" id="file">
+            </div>
+            <div class="input-field">
+                <label for="color">Course color</label>
+                <input type="color" id="color">
+            </div>
+            <div class="input-field">
+                <label for="range">Course difficulty</label>
+                <input type="range" id="range" min="0" max="100">
+            </div>
+            <div class="input-field">
+                <label for="tel">Phone</label>
+                <input type="tel" id="tel" placeholder="Enter phone number" required>
+            </div>
+            <div class="input-field">
+                <label for="url">Course background</label>
+                <input type="url" id="url" placeholder="Enter a URL">
+            </div>
+            <div class="input-field">
+                <label for="textarea">Course Discription</label>
+                <textarea id="textarea" placeholder="Enter your message"></textarea>
+            </div>
+            <div class="input-field">
+                <label for="dropdown">Course Location</label>
+                <select id="dropdown">
+                    <option value="Option 1">Online</option>
+                    <option value="Option 2">Offline</option>
+                    <option value="Option 3">Hybride</option>
+                </select>
+            </div>
+            <div class="input-field">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <input type="radio" name="gender" value="Male" id="male"><label for="male">Male</label>
+                    <input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label>
+                </div>
+            </div>
+            <div class="input-field">
+                <label>Agree to Terms</label>
+                <input type="checkbox" id="terms">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Form Submitted!');
+});
+
+    </script>
+</body>
+</html>

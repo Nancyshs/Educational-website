@@ -1,0 +1,225 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On School</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.esm.js"></script>
+    <script src="js/bootstrap.bundle.js"></script> -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-page">
+        <div class="navbar1"  id="navbar">
+            <!-- <div class="nav-bars">
+                <i class="fa-solid fa-bars"></i>
+            </div> -->
+            <div class="nav">
+                <div class="title">
+                    <img src="./images/logo.avif" alt="">
+                    <h3>on school</h3>
+                </div>
+                <div class="div1">
+                    <a class="icon none">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                    </a>
+                    <a href="index.html">Dashboard</a>
+                </div>
+                <div class="div1">
+                    <a class="icon none"><i class="fa-solid fa-ethernet"></i></a>
+                    <a href="table.html">Recent orders</a>
+                </div>
+                <div class="div1">
+                    <a class="icon none">
+                        <i class="fa-regular fa-square-check"></i>
+                    </a>
+                    <a>form</a>
+                </div>
+                <div class="div1">
+                    <a class="icon none">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </a>
+                    <a>analytics</a>
+                </div>
+                <div class="div1">
+                    <a class="icon none">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a>messages</a>
+                </div>
+                <div class="div1">
+                    <a class="icon none">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </a>
+                    <a>products</a>
+                </div>
+                <div class="div1">
+                    <a class="icon none">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                    <a>log out</a>
+                </div>
+            </div>
+        </div>
+     <div class="page">
+        <header>
+            <div class="cont">
+                <div class="show-bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <form action="">
+                        <input type="search" name="" id="" placeholder="search">
+                        <input type="submit" value="search">
+                    </form>
+                </div>
+                <div class="name">
+                    <span>Nancy Adel</span>
+                    <i class="fa-solid fa-caret-down" id="b-s-l"></i>
+                </div>
+                <div class="data dis">
+                    <div class="info">
+                        <div class="text">
+                            <span>Nancy Adel</span>
+                            <span>studeent</span>
+                        </div>
+                        <div class="img">
+                            <img src="./images/person.avif" alt="">
+                        </div>
+                    </div>
+                    <div class="button-show">
+                        <button>
+                            <span>log out</span>
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="dash">  
+            <div class="grid-divs">
+                <div class="div1">
+                   <div class="show-icon">
+                    <i class="fa-solid fa-people-group"></i>
+                   </div>
+                    <div class="student">
+                        <div class="text">
+                            <p>total students</p>
+                        </div>
+                        <div class="prog" data-value="150">
+                            <span data-value="150">0</span>
+                        </div>
+                    </div>
+                    <p>last 24 hours</p>
+                </div>
+                <div class="div1">
+                    <div class="show-icon">
+                        <i class="fa-brands fa-leanpub"></i>
+                    </div>
+                    <div class="student">
+                        <div class="text">
+                            <p>total courses</p>
+                        </div>
+                        <div class="prog" data-value="100">
+                            <span data-value="100">0</span>
+                        </div>
+                    </div>
+                    <p>last 24 hours</p>
+                </div>
+                <div class="div1">
+                   <div class="show-icon">
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                   </div>
+                    <div class="student">
+                        <div class="text">
+                            <p>total instructors</p>
+                        </div>
+                        <div class="prog" data-value="200">
+                            <span data-value="200">0</span>
+                        </div>
+                    </div>
+                    <p>last 24 hours</p>
+                </div>        
+            </div>
+             <div class="recnt-course">
+                <h2 id="h22">Recent courses</h2>
+            <table id="table">
+                <tr class="head ">
+                    <td class="hide">course name</td>
+                    <td class="none">course number</td>
+                    <td>price</td>
+                    <td >edit</td>
+                    <td>delete</td>
+                    
+                </tr>
+                <tr>
+                    <td class="hide">C++</td>
+                    <td class="none">3562</td>
+                    <td>$150</td>
+                    <td class="edit">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </td>
+                    <td  class="delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </td>
+             </tr>
+                <tr>
+                    <td class="hide">Java</td>
+                    <td class="none">1092</td>
+                    <td>$200</td>
+                    <td class="edit">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </td>
+                    <td  class="delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </td>
+             </tr>
+                <tr>
+                    <td >English level 1</td>
+                    <td class="none">9283</td>
+                    <td>$220</td>
+                    <td class="edit">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </td>
+                    <td  class="delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </td>
+             </tr>
+                <tr>
+                    <td >C#</td>
+                    <td class="none">4647</td>
+                    <td>$180</td>
+                    <td class="edit">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </td>
+                    <td  class="delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </td>
+             </tr>
+                <tr>
+                    <td >JavaScript</td>
+                    <td class="none">8392</td>
+                    <td>$100</td>
+                    <td class="edit">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </td>
+                    <td  class="delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </td>
+             </tr>
+                
+                
+            </table>
+            </div> 
+                <!-- <div class="show-a">
+                    <a href="table.html" class="show">show more</a>
+                </div> -->
+        </div>
+     </div>
+    </div>
+    <script src="main.js"></script>
+</body>
